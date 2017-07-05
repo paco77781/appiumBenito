@@ -1,0 +1,51 @@
+Feature: Login successful
+
+  Scenario: Login functionality exists                        # features/login-successful.feature:4
+    Given I open the app                                      # features/login-successful.feature:6
+    When I enter Usuario as "iber4" and Contrasena as "iber4" # features/login-successful.feature:9
+    Then login should be successful                           # features/login-successful.feature:11
+
+Feature: Login unsuccessful
+
+  Scenario: Login functionality no exists 1                         # features/login-unsuccesful.feature:3
+    Given I open the app                                            # features/login-unsuccesful.feature:5
+    When I enter Usuario as "trytryte" and Contrasena as "trytryte" # features/login-unsuccesful.feature:7
+    Then login should be unsuccessful                               # features/login-unsuccesful.feature:9
+
+  Scenario: Login functionality no exists 2         # features/login-unsuccesful.feature:11
+    Given I open the app                            # features/login-unsuccesful.feature:13
+    When I enter Usuario as "" and Contrasena as "" # features/login-unsuccesful.feature:15
+    Then login should be unsuccessful               # features/login-unsuccesful.feature:17
+
+  Scenario: Login functionality no exists 3                   # features/login-unsuccesful.feature:19
+    Given I open the app                                      # features/login-unsuccesful.feature:21
+    When I enter Usuario as "pepepotamo" and Contrasena as "" # features/login-unsuccesful.feature:23
+    Then login should be unsuccessful                         # features/login-unsuccesful.feature:25
+
+  Scenario: Login functionality no exists 4             # features/login-unsuccesful.feature:27
+    Given I open the app                                # features/login-unsuccesful.feature:29
+    When I enter Usuario as "" and Contrasena as "pepe" # features/login-unsuccesful.feature:31
+    Then login should be unsuccessful                   # features/login-unsuccesful.feature:33
+
+5 scenarios (5 undefined)
+15 steps (15 undefined)
+0m0.063s
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^I open the app$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I enter Usuario as "([^"]*)" and Contrasena as "([^"]*)"$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^login should be successful$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^login should be unsuccessful$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+

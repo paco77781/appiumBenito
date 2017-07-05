@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="20" failures="0" name="cucumberJava.runTest" time="0.031" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Archivos de programa\Java\jdk1.8.0_111\jre\bin"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Program Files (x86)\Jenkins\workspace\iberbank_maestro"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\apache-maven-3.5.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Archivos de programa\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\apache-maven-3.5.0/bin;C:\Archivos de programa\nodejs\nmp.cmd;C:\Archivos de programa\nodejs\;C:\Ruby23-x64\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\CA\SharedComponents\PEC\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Java\jdk1.6.0_25\jre\bin\client;C:\Program Files (x86)\CA\Cryptography\;C:\Program Files (x86)\CA\AllFusion Harvest Change Manager;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files (x86)\MongoDB\Server\3.2\bin;C:\Archivos de programa\Java\jdk1.8.0_111\bin;D:\Usuarios\Ibermatica\AppData\Local\Android\sdk\tools;D:\Usuarios\Ibermatica\AppData\Local\Android\sdk\platform-tools;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;D:\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;;."/>
+    <property name="maven.conf" value="D:\apache-maven-3.5.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="D:\apache-maven-3.5.0\bin\..\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="LM22672P$"/>
+    <property name="java.class.path" value="D:\apache-maven-3.5.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Archivos de programa\Java\jdk1.8.0_111\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f D:\Usuarios\Ibermatica\IdeaProjects\iberbank8\pom.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Archivos de programa\Java\jdk1.8.0_111\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\apache-maven-3.5.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Given I open the app   " name="Given I open the app   " time="0"/>
+  <testcase classname="When I enter Usuario as &quot;trytryte&quot; and Contrasena as &quot;trytryte&quot;    " name="When I enter Usuario as &quot;trytryte&quot; and Contrasena as &quot;trytryte&quot;    " time="0"/>
+  <testcase classname="Then login should be unsuccessful     " name="Then login should be unsuccessful     " time="0"/>
+  <testcase classname="Scenario: Login functionality no exists 1  " name="Scenario: Login functionality no exists 1  " time="0.015"/>
+  <testcase classname="Given I open the app       " name="Given I open the app       " time="0"/>
+  <testcase classname="When I enter Usuario as &quot;&quot; and Contrasena as &quot;&quot;        " name="When I enter Usuario as &quot;&quot; and Contrasena as &quot;&quot;        " time="0"/>
+  <testcase classname="Then login should be unsuccessful         " name="Then login should be unsuccessful         " time="0"/>
+  <testcase classname="Scenario: Login functionality no exists 2      " name="Scenario: Login functionality no exists 2      " time="0.016"/>
+  <testcase classname="Given I open the app           " name="Given I open the app           " time="0"/>
+  <testcase classname="When I enter Usuario as &quot;pepepotamo&quot; and Contrasena as &quot;&quot;            " name="When I enter Usuario as &quot;pepepotamo&quot; and Contrasena as &quot;&quot;            " time="0"/>
+  <testcase classname="Then login should be unsuccessful             " name="Then login should be unsuccessful             " time="0"/>
+  <testcase classname="Scenario: Login functionality no exists 3          " name="Scenario: Login functionality no exists 3          " time="0"/>
+  <testcase classname="Given I open the app               " name="Given I open the app               " time="0"/>
+  <testcase classname="When I enter Usuario as &quot;&quot; and Contrasena as &quot;pepe&quot;                " name="When I enter Usuario as &quot;&quot; and Contrasena as &quot;pepe&quot;                " time="0"/>
+  <testcase classname="Then login should be unsuccessful                 " name="Then login should be unsuccessful                 " time="0"/>
+  <testcase classname="Scenario: Login functionality no exists 4              " name="Scenario: Login functionality no exists 4              " time="0"/>
+  <testcase classname="Given I open the app                   " name="Given I open the app                   " time="0"/>
+  <testcase classname="When I enter Usuario as &quot;iber4&quot; and Contrasena as &quot;iber4&quot;                    " name="When I enter Usuario as &quot;iber4&quot; and Contrasena as &quot;iber4&quot;                    " time="0"/>
+  <testcase classname="Then login should be successful                     " name="Then login should be successful                     " time="0"/>
+  <testcase classname="Scenario: Login functionality exists                  " name="Scenario: Login functionality exists                  " time="0"/>
+</testsuite>

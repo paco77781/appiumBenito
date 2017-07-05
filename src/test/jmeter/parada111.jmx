@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Plan de Pruebas" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables definidas por el Usuario" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
+        <longProp name="ThreadGroup.start_time">1491980139000</longProp>
+        <longProp name="ThreadGroup.end_time">1491980139000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 /generate_204" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">clients3.google.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/generate_204</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-G130HN Build/KOT49H)</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="2 /generate_204" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">clients3.google.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/generate_204</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-G130HN Build/KOT49H)</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="3 /v1/stop/11830" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">api.interurbanos.welbits.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/v1/stop/11830</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Android 4.4.2 (API 19) | com.welbits.interurbanosmadrid 2.2 (23) | samsung young2nfc3gxx (SM-G130HN)</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4 /batch" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="&#x8b;&#x8;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;åØKOãH&#x10;&#x0;àûþ&#x8f;õ%²ÕïÇ¡&#xf;&#x99;&#x81;Ñ &#xd;b&#x4;Ì\QÛî&#x84;Ö86kwÂî¿ß²&#x93;  &#xf;&#x7;&#x92;YmÂÅ2!&#x8e;»¾ªnW{Z&#x18;×Ä®&#x89;&#x9a;ÚP&#x82;þf&#xa;EÖP&#x8c;&#x9;fTGMf&#x9a;`ë&#x10;Y&#x9f;&#x9b;¬&#x9a;$&#x8f;®H}h&#x12;_&#x6;WOëÔ&#x96;U3±yíó(&#x83;¯`&#x8d;µÕ&#x92;Æ&#x9c;¢&lt;fÜf±¢¹&#x8b;&#x89;`4WVbìF&#x91;&#x9d;&#x19;&#x92;&#x90;hfpds¸HbIÈHãX&#x8e;2&#x14;3&#x94;&#x8d;â4E&lt;&#x16;D§)É&#x88;&#x13;JFÁ4Yí\9óî1²¥¹ìn:ø4m&#x6;ç&#x97;·&#x83;&#x8b;gã&#x89;lp&#x6;Âð&#x8b;1Û2¯+&#x9f;&apos;3Wæ¾&#x1c;G&#x1;&gt;ÿ1&#x84;ÑI-&#x14;&#x83;ÛFw&#x8d;Á&#x92;²(ë&#xb;2&#x99;údb}&#x99;\Âa&#x98;&#x5;?óá&#x9f;ènf" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">&#x8b;&#x8;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;åØKOãH&#x10;&#x0;àûþ&#x8f;õ%²ÕïÇ¡&#xf;&#x99;&#x81;Ñ &#xd;b&#x4;Ì\QÛî&#x84;Ö86kwÂî¿ß²&#x93;  &#xf;&#x7;&#x92;YmÂÅ2!&#x8e;»¾ªnW{Z&#x18;×Ä®&#x89;&#x9a;ÚP&#x82;þf
+EÖP&#x8c;	fTGMf&#x9a;`ë&#x10;Y&#x9f;&#x9b;¬&#x9a;$&#x8f;®H}h&#x12;_&#x6;WOëÔ&#x96;U3±yíó(&#x83;¯`&#x8d;µÕ&#x92;Æ&#x9c;¢&lt;fÜf±¢¹&#x8b;&#x89;`4WVbìF&#x91;&#x9d;&#x19;&#x92;&#x90;hfpds¸HbIÈHãX&#x8e;2&#x14;3&#x94;&#x8d;â4E&lt;&#x16;D§)É&#x88;&#x13;JFÁ4Yí\9óî1²¥¹ìn:ø4m&#x6;ç&#x97;·&#x83;&#x8b;gã&#x89;lp&#x6;Âð&#x8b;1Û2¯+&#x9f;&apos;3Wæ¾&#x1c;G&#x1;&gt;ÿ1&#x84;ÑI-&#x14;&#x83;ÛFw&#x8d;Á&#x92;²(ë&#xb;2&#x99;údb}&#x99;\Âa&#x98;&#x5;?óá&#x9f;ènf</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata"></stringProp>
+                </elementProp>
+                <elementProp name="V&apos;(&#x1;¼û`0&#x3;&#x5;©9&#x92;&#x82;òè¯`&#x4;&#x17;Hñèn&lt;i h&#x94;&#x90;D«?¦[ä&#x19;úXòü°ò&#x2;KEI+Ï&#x19;WJ¿&#x96;o¹&#x88;¢HK&#x8c;&#x9e;|ÓªúÕ&#x8e;q·&#x10;0&#x16;&#x18;é&#x18;³6&#x2;AÐr$,á&#x4;&#x82;&#x91;¦" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">V&apos;(&#x1;¼û`0&#x3;&#x5;©9&#x92;&#x82;òè¯`&#x4;&#x17;Hñèn&lt;i h&#x94;&#x90;D«?¦[ä&#x19;úXòü°ò&#x2;KEI+Ï&#x19;WJ¿&#x96;o¹&#x88;¢HK&#x8c;&#x9e;|ÓªúÕ&#x8e;q·&#x10;0&#x16;&#x18;é&#x18;³6&#x2;AÐr$,á&#x4;&#x82;&#x91;¦</stringProp>
+                  <stringProp name="Argument.value">*&#x3;&#x7;&#xe;¿&#x96;å&#x2;È&#x9f;2&#x9e;åÔ&lt;ú&#x91;&#x87;&#x13;f&#x8a;j&lt;vùÀ&#x97;ð&#x17;6ßï«Ò½,	&#x8c;µæ&#x92;q</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="à&#x1b;Ä´&#x15;³¬&#x8d;6ñ&#x99;&#x96;Ph&#xe;Ç&#x82;§&#x90;C%Il©°qÆÔ&#x8;gn$&#x15;KÛÄc&#x9c;È" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">à&#x1b;Ä´&#x15;³¬&#x8d;6ñ&#x99;&#x96;Ph&#xe;Ç&#x82;§&#x90;C%Il©°qÆÔ&#x8;gn$&#x15;KÛÄc&#x9c;È</stringProp>
+                  <stringProp name="Argument.value">3ÿiN&#x94;&#x80;Ëàk&#x15;\ÑÅbþ$_æÃy&#x96;&#x1;¢&#x89;&#x10;]&#x6;(c\lÍÀú&#x99;ð&#x14;¶\IÑÿ ìwU	^hùÒ&#x7;o&#x8b;&#x17;5óÌ&#x8e;&quot;ÄñÜ&#x8e;
+I¶Û&#x85;Â|¾wÙ¯&#x8b;òÚ&#x6;¸õ&#x99;&#xd;¶OTÁe&#x99;¹º¾üæ&#x83;ûïu&#x83;&#x9f;t&#x13;m½ì4&#x4;C8Xõ&#x10;OÃÌ|«l¾Á&#x9a;ìhM)ØtÖ&#x8;*µ×úÌ5 &#xc;ÒUyë&#x1f;&#x8e;&#x1e;&#x9a;i¡÷&#x84;¦»B3L&#x96;Ð&#x98;öBÃB&#x18;ª&#x13;ðUûú²]}%¢&#xb;_Dz|ûTW&#x9a;&#x8f;c_yù&#x2;q&#x11;G³I&#x91;AqÎ&#x97;&#x3;&#x82;&#x84;Vû(®i&#x9e;&#x8f;]QìV&#x8a;&#x1c;:ßùó&#xb;)Á÷AäkúàcG&#x94;Ë^w&#x11;Hb&#x17;Ílræ&#x1b;;IýxÚ=^^÷¸+ÊÀ7_P&#x91;h&#x7f;u&#xf;e|zÊjÙ&#x98;:[g÷pR»fZ&#x84;M&#x13;&#x1f;¶Gíº&#x7;&#x9a;&#xc;Z&#xf;ÕÓsm×$§§©&#x17;&#x9a;&#xf;uõàê&#x8d;5))ì¼d§H$ç=ÝÔvEzr&#x8a;&#x14;½R&#x84;S&#x9b;Áå&#x93;*ïfüÆâ&#x14;\£îE&#x2;ÕRí7ÕÙé±âw²*&#x81;ÛG|Ë&#x8a;&#x8;¢»½&#x9f;Á&#xc;
+&#x1b;V&#x8;µ&#x6;ò&#x94;ßÐ&#x88;Ã¾¡QBp¤[{¢!À7Úó&#xf;A.ß@~&#x13;ª&#x87;3&#x17;¬/úà!:ÎçðXÃ¿Þ&#x4;/v&#x81;wÖ|&#x19;þ¼úq}q{¾{&#x16;\fnÎ&#x87;×&#x9f;¿ÞÝÜ^}&#x7f;oR&#x1c; &#x86;È&#x15;F&#x8;M~S^ÔoÊ&#x8b;fË¼(´Ò&#x80;&#x1c; /G?!ô&#x12;~\UãÂ=]&#x7;R&#x89;Í&#x9b;d&#x98;÷ k$&#x14;ê¶w&#x84;&#xb;ÍVv</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="Û&#x91;åG@fè°&#xb;½Æ&#x94;36&apos;G&#x84;¼&#x91;|Í&#x9b;&#x88;S¶Ç&#x87;´W&#x8;3µØ&quot;b.`Gþ&#x82;þ_]à&#x8;êù" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">Û&#x91;åG@fè°&#xb;½Æ&#x94;36&apos;G&#x84;¼&#x91;|Í&#x9b;&#x88;S¶Ç&#x87;´W&#x8;3µØ&quot;b.`Gþ&#x82;þ_]à&#x8;êù</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">ssl.google-analytics.com</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/batch</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Content-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">GoogleAnalytics/10.2.98 (Linux; U; Android 4.4.2; es-es; SM-G130HN Build/KOT49H)</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="5 /v1/stop/17472" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">api.interurbanos.welbits.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/v1/stop/17472</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Android 4.4.2 (API 19) | com.welbits.interurbanosmadrid 2.2 (23) | samsung young2nfc3gxx (SM-G130HN)</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ThreadsStateOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Active Threads Over Time" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <longProp name="interval_grouping">500</longProp>
+          <boolProp name="graph_aggregated">false</boolProp>
+          <stringProp name="include_sample_labels"></stringProp>
+          <stringProp name="exclude_sample_labels"></stringProp>
+          <stringProp name="start_offset"></stringProp>
+          <stringProp name="end_offset"></stringProp>
+          <boolProp name="include_checkbox_state">false</boolProp>
+          <boolProp name="exclude_checkbox_state">false</boolProp>
+        </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+        <hashTree/>
+        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener" enabled="true">
+          <stringProp name="cacheKey"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script"></stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Listener>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
