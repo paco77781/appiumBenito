@@ -3,11 +3,11 @@ Característica: Login sin exito
 
 Esquema del escenario:login incorrecto 0
 
-Dado que me conecto a la aplicacion
+Dado que me conecte a la aplicacion
 
 Cuando introduzco usuario <login> y contraseña <pass>
 
-Entonces no me deja entrar a la aplicacion
+Entonces no me dejara entrar a la aplicacion
   Ejemplos:
     |  login        |  pass        |
     |  "trytryte"   |  "trytryte"  |

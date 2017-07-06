@@ -32,7 +32,7 @@ public class cucumberJava {
     AppiumDriverLocalService appiumService ;
     String appiumServiceUrl ;
 
-    @Dado("que me conecto a la aplicacion$")
+    @Dado("que me conecte a la aplicacion$")
     public void openDevices(){
         appiumService = AppiumDriverLocalService.buildDefaultService();
         appiumService.start();
@@ -90,7 +90,7 @@ public class cucumberJava {
 
     }
 
-    @Y("^para consultar cuentas introduzco usuario \"([^\"]*)\" y contraseña \"([^\"]*)\"$")
+    @Y("^para consultar cuentas introduje usuario \"([^\"]*)\" y contraseña \"([^\"]*)\"$")
     public void I_enter_Usuario_as_and_Contrasena_as2(String arg1, String arg2) throws AWTException {
 
 
@@ -100,7 +100,6 @@ public class cucumberJava {
         driver.findElement(By.id("btnLogin")).click();
 
     }
-
     @Cuando("pulso en cuenta$")
         public void click_account()
         {
@@ -111,9 +110,9 @@ public class cucumberJava {
             }
         }
 
-        @Entonces("veo el saldo")
+        @Entonces("vere el saldo")
         public void veo_saldo(){
-            Assert.assertTrue(isElementPresent(By.id("F")));
+            Assert.assertTrue(isElementPresent(By.id("listaCuentas")));
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
@@ -123,7 +122,7 @@ public class cucumberJava {
             appiumService.stop();
         }
 
-    @Entonces("no me deja entrar a la aplicacion$")
+    @Entonces("no me dejara entrar a la aplicacion$")
     public void loginshouldbeunsuccessful() {
 
         Assert.assertTrue(isElementPresent(By.id("alertMessage")));
@@ -144,7 +143,7 @@ public class cucumberJava {
 
     }
 
-    @Entonces("entramos en la aplicacion$")
+    @Entonces("entrare en la aplicacion$")
     public void loginshouldbesuccessful() {
         Assert.assertFalse(isElementPresent(By.id("alertMessage")));
 
