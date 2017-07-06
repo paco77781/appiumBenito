@@ -59,7 +59,7 @@ public class cucumberJava {
         //capabilities.setCapability("app","/android-debug.apk");
 
         //capabilities.setCapability("app","src/apk/android-debug.apk");
-        capabilities.setCapability("app","src/apk/Appium.apk");
+        capabilities.setCapability("app","src/apk/AppiumDemo.apk");
 
         //capabilities.setCapability("app","C:\\Program Files (x86)\\Jenkins\\workspace\\iberbank_maestro\\src\\apk\\android-debug.apk");
        //capabilities.setCapability("app","src/apk/android-debug.apk");
@@ -100,6 +100,8 @@ public class cucumberJava {
         driver.findElement(By.id("btnLogin")).click();
 
     }
+
+
     @Cuando("pulso en cuenta$")
         public void click_account()
         {

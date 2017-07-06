@@ -1,12 +1,17 @@
 # language: es
 Característica: Login sin exito
 
-Esquema del escenario:login incorrecto 0
-
+Antecedentes:
 Dado que me conecte a la aplicacion
 
-Cuando introduzco usuario <login> y contraseña <pass>
 
+
+Esquema del escenario:login incorrecto 0
+
+#Dado que me conecte a la aplicacion
+
+#Cuando introduzco usuario <login> y contraseña <pass>
+  Cuando introduzco usuario <login> y contraseña <pass>
 Entonces no me dejara entrar a la aplicacion
   Ejemplos:
     |  login        |  pass        |
