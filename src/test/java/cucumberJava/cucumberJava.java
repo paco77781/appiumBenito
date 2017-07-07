@@ -29,15 +29,15 @@ import cucumber.annotation.es.Y;
 
 public class cucumberJava {
     private WebDriver driver;
-  //  AppiumDriverLocalService appiumService ;
-  //  String appiumServiceUrl ;
+    AppiumDriverLocalService appiumService ;
+    String appiumServiceUrl ;
 
     @Dado("que me conecte a la aplicacion$")
     public void openDevices(){
-       // appiumService = AppiumDriverLocalService.buildDefaultService();
-      //  appiumService.start();
-      //  appiumServiceUrl = appiumService.getUrl().toString();
-      //  System.out.println("Appium Service Address : - "+ appiumServiceUrl);
+        appiumService = AppiumDriverLocalService.buildDefaultService();
+        appiumService.start();
+        appiumServiceUrl = appiumService.getUrl().toString();
+        System.out.println("Appium Service Address : - "+ appiumServiceUrl);
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -66,8 +66,8 @@ public class cucumberJava {
 
         // capabilities.setCapability("app","/Iberbank_fuentes/IberBank.apk");
         try{
-            driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities) {};
-         //   driver = new AndroidDriver(new URL(appiumServiceUrl), capabilities);
+            //driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities) {};
+            driver = new AndroidDriver(new URL(appiumServiceUrl), capabilities);
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
         } catch (MalformedURLException e) {
@@ -121,7 +121,7 @@ public class cucumberJava {
             }
             driver.quit();
             System.out.println("Stop appium service");
-          //  appiumService.stop();
+            appiumService.stop();
         }
 
     @Entonces("no me dejara entrar a la aplicacion$")
@@ -138,7 +138,7 @@ public class cucumberJava {
 
         driver.quit();
         System.out.println("Stop appium service");
-      //  appiumService.stop();
+        appiumService.stop();
 
         //driver.quit();
 
@@ -158,7 +158,7 @@ public class cucumberJava {
 
         driver.quit();
         System.out.println("Stop appium service");
-       // appiumService.stop();
+        appiumService.stop();
 
     }
 
