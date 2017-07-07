@@ -7,7 +7,7 @@
     <groupId>appiumBenito</groupId>
     <artifactId>appiumBenito</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>iberbank10</name>
+    <name>appiumBenito</name>
 
     <dependencies>
         <dependency>
